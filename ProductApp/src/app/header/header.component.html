@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<div class='card-header'>
+    <a routerLink='/'>Products </a>|
+    <a routerLink='/add'>Add Product</a> |
+    <a routerLink='/register' *ngIf="!loggedIn()">Signup</a> |
+    <a routerLink='/login' *ngIf="!loggedIn()">Login</a> |
+    <!-- <a routerLink='/register' *ngIf="!loggedIn()">Sign-up </a>|
+    <a routerLink='/login' *ngIf="!loggedIn()">Login</a> -->
+    <!-- <a routerLink="/" *ngIf="loggedIn()" (click)="logoutUser()">Logout</a> -->
+</div>
