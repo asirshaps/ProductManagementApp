@@ -11,6 +11,7 @@ import { NewProductComponent } from './new-product/new-product.component';
 import { EditProductComponent } from './edit-product/edit-product.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { ProductService } from './product.service';
 
 
 @NgModule({
@@ -30,7 +31,9 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [AuthGuard],
+  providers: [AuthGuard,
+    
+    ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

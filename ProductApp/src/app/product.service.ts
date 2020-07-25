@@ -5,8 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductService {
-  private _registerUrl = "http://localhost:3000/api/register";
-  private _loginUrl = "http://localhost:3000/api/login";
+  private _registerUrl = "http://localhost:3000/register";
+  private _loginUrl = "http://localhost:3000/login";
   constructor(private http: HttpClient) { }
   getProducts() {
     return this.http.get("http://localhost:3000/products");
